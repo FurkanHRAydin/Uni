@@ -1,0 +1,7 @@
+a:hover {font-size: 30px; color: grey;}
+.ueber { color: red; }
+article > p:hover {font-size: 15pt; margin: 20px; color: green; }
+span { padding: 15px 0px 15px 0px; }
+#tabelle {color: green; }
+ul:nth-of-type(even) { color: green; }
+ul:nth-of-type(odd) { color: blue; }
