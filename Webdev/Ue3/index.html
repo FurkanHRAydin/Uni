@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ue3</title>
+        <meta charset="uft-8">
+    </head>
+    <script src="script.js" defer></script>
+    <body>
+        <h1>Pizza Online</h1>
+        <form id="form">
+            <label>Waehlen Sie die Groesse aus:</label>   
+                <select id="pizza">
+                    <option value="Mini (15cm)">Mini (15cm)</option>
+                    <option value="Maxi (30cm)">Maxi (30)</option>
+                    <option value="Party (45cm)">Party (45)</option>
+                </select>
+        </form>
+        <form>
+            <p>Waehlen Sie weitere Zutaten aus:</p>
+            <input type="checkbox" id="Salami" name="Salami" value="Salami">
+            <label for="Salami">Salami</label><br>
+
+            <input type="checkbox" id="Schinken" name="Schinken" value="Schinken">
+            <label for="Schinken">Schinken</label><br>
+
+            <input type="checkbox" id="Ananas" name="Ananas" value="Ananas">
+            <label for="Ananas">Ananas</label><br>
+
+            <input type="checkbox" id="Pilze" name="Pilze" value="Pilze">
+            <label for="Pilze">Pilze</label><br>
+            <br>
+            <input type="button" id="bestellen" value="Bestellen">
+        </form>
+        <br>
+        <table id="Zutaten">
+            <tr>
+                <td>Größe </td>
+                <td>Zutaten </td>
+                <td>Preis </td>
+                <td>Kalorien </td>
+            </tr>
+        </table>
+        <br>
+        <label id="price_span">Gesamtpreis: </label>
+        <span id="price">0</span>
+    </body>
+</html>
