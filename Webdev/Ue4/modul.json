@@ -1,0 +1,25 @@
+{
+    "modul": {
+      "Titel": " Modul BIN-203/MDI-203 Webtechnologien ",
+      "Veranstaltungsart": " Vorlesung mit Übung ",
+      "SWS": " 4 SWS ",
+      "Präsenzstunden": " 68 h",
+      "Selbststudium": " 112 h",
+      "Studiensemester": " 4 ",
+      "Empfohlene_Vorausetzungen": [
+        " Programmieren 1-3 ",
+        " Betriebssysteme und Netzwerke ",
+        " Englisch "
+      ],
+      "Studien-Prüfungsleistungen": [
+        " Prüfung(Klausur oder mündliche Prüfung) ",
+        " experimentielle Arbeit "
+      ],
+      "Angestrebste_Lernergebnisse": [
+        " Technologische Kompetenz ",
+        " Design-Kompetenz ",
+        " Realisierung-Kompetenz "
+      ]
+    },
+    "#standalone": "no"
+  }

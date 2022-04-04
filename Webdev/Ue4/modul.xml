@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE modul SYSTEM "extern.dtd">
+
+<modul>
+    <Titel> Modul BIN-203/MDI-203 Webtechnologien </Titel>
+    <Veranstaltungsart> Vorlesung mit Übung </Veranstaltungsart>
+    <SWS> 4 SWS </SWS>
+    <Präsenzstunden> 68 h</Präsenzstunden>
+    <Selbststudium> 112 h</Selbststudium>
+    <Studiensemester> 4 </Studiensemester>
+
+    <Empfohlene_Vorausetzungen> Programmieren 1-3 </Empfohlene_Vorausetzungen>
+    <Empfohlene_Vorausetzungen> Betriebssysteme und Netzwerke </Empfohlene_Vorausetzungen>
+    <Empfohlene_Vorausetzungen> Englisch </Empfohlene_Vorausetzungen>
+
+    <Studien-Prüfungsleistungen> Prüfung(Klausur oder mündliche Prüfung) </Studien-Prüfungsleistungen>
+    <Studien-Prüfungsleistungen> experimentielle Arbeit </Studien-Prüfungsleistungen>
+
+    <Angestrebste_Lernergebnisse> Technologische Kompetenz </Angestrebste_Lernergebnisse>
+    <Angestrebste_Lernergebnisse> Design-Kompetenz </Angestrebste_Lernergebnisse>
+    <Angestrebste_Lernergebnisse> Realisierung-Kompetenz </Angestrebste_Lernergebnisse>
+</modul>
