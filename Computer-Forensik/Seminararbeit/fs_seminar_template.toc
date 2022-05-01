@@ -1,0 +1,7 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Hauptteil}{3}{section.2}%
+\contentsline {section}{\numberline {3}Fazit}{3}{section.3}%
+\contentsline {section}{\numberline {4}Quellen}{3}{section.4}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

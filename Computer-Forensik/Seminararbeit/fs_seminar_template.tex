@@ -1,0 +1,139 @@
+\documentclass[12pt,DIV=14, version=first, BCOR=10mm,a4paper,twoside,parskip=half-,headsepline,headinclude]{scrartcl}
+% Grundgröße 12pt, zweiseitig
+% Standardpakete
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+% schöne Tabellen
+\usepackage{booktabs}
+% etwas Mathematik
+\usepackage{amsmath,amssymb}
+% Grafiken einbinden
+\usepackage{graphicx}
+% Kopf- und Fußzeilen
+\usepackage[headsepline,footsepline,automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+% Links anklickbar
+\usepackage{url,hyperref,color} 
+\definecolor{MidnightBlue}{cmyk}{0.98,0.13,0,0.43}
+\hypersetup{colorlinks,breaklinks=true, pdffitwindow=true,pdfpagelayout=SinglePage,
+            linkcolor=blue,pdfauthor={}, pdfdisplaydoctitle=true,
+            pdfsubject={},   % to be defined later
+            bookmarksnumbered,citecolor=MidnightBlue, 
+            urlcolor=MidnightBlue}
+\raggedbottom
+\renewcommand{\topfraction}{1}
+\renewcommand{\bottomfraction}{1}
+
+
+% zum Ausprobieren
+\usepackage{blindtext}
+
+
+% jetzt gehts los
+\begin{document}% hier gehts los
+  \thispagestyle{empty} % Titelseite
+\includegraphics[width=0.2\textwidth]{Wortmarke_WI_schwarz}
+
+   {  ~ \sffamily
+  \vfill
+  {\Huge\bfseries Ablauf von Angriffen/Bedrohungssituationen}
+  \bigskip
+
+  {\Large 
+   Aland Mohamed und Furkan Hidayet Aydin \\[2ex]
+ Seminar-Arbeit im Studiengang "`Angewandte Informatik"
+ \\[5ex]
+   \today } 
+}
+ \vfill
+  
+  ~ \hfill
+  \includegraphics[height=0.3\paperheight]{H_WI_Pantone1665} 
+
+\vspace*{-3cm}
+
+  \newpage \thispagestyle{empty}
+ \begin{tabular}{ll}
+{\bfseries\sffamily Autor 1:} &  Aland Mohamed \\ 
+            & 1630233 \\
+            & aland.mohamed@stud.hs-hannover.de \\
+            & Verfasste Seiten/Abschnitte: ...
+            \\[5ex]
+{\bfseries\sffamily Autor 2:} & Furkan Hidayet Rafet Aydin \\ 
+            & 1630039 \\
+            & furkan-hidayet-rafet.aydin@stud.hs-hannover.de \\
+           & Verfasste Seiten/Abschnitte: ... \\[5ex]
+ {\bfseries\sffamily Prüferin:} &Dipl.-Ing. Frank Müller M.Sc. \\
+          & Abteilung Informatik, Fakultät IV \\
+         & Hochschule Hannover \\
+        & frank.mueller@hs-hannover.de
+\end{tabular}
+
+\vfill
+
+\begin{center} \sffamily\bfseries Selbständigkeitserklärung \end{center}
+% fett und zentriert in der minipage
+
+Mit der Abgabe der Ausarbeitung erklären wir, dass wir die eingereichte Seminar-Arbeit
+selbständig und ohne fremde Hilfe verfasst, andere als die von uns angegebenen Quellen
+und Hilfsmittel nicht benutzt und die den benutzten Werken wörtlich oder
+inhaltlich entnommenen Stellen als solche kenntlich gemacht haben. 
+\vspace*{7ex}
+
+Hannover, den \today \hfill 
+
+\pagebreak
+
+  \pdfbookmark[0]{Inhalt}{contents}
+  \tableofcontents  % Inhaltsverzeichnis
+	\section{Einleitung}
+	Diese Seminarbeit dient als kurze Einfuehrung in die Computerforensik und soll zeigen in welche Bedrohungssitutationen die IT-Systeme ausgesetzt werden und die Vorrangehensweisen von Angriffen der TaeterInnen auf diese Systeme.
+	\subsection{Motivation}
+	
+	
+	 
+	    
+	
+	
+	
+	
+	
+	\section{Hauptteil}
+	
+	
+	
+	
+	
+	\section{Fazit}
+	
+	
+	
+	
+	\section{Quellen}
+
+
+\pagebreak
+
+%\input{abkuerz.tex}      % Einbinden von Tex-Files
+%\input{einfuehrung.tex}
+
+
+% durch eigenen Text ersetzen
+%\Blinddocument
+
+% Literatur
+\bibliographystyle{alpha}
+%\bibliography{mybib}
+\begin{thebibliography}{9}
+	\bibitem{Buch1}
+	Alexander Geschonneck. Computer-Forensik : Computerstraftaten erkennen, ermitteln, aufklären. dpunkt.verlag GmbHl, 2014.
+	
+	
+	
+\end{thebibliography}
+
+\end{document}
+
