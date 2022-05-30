@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Gebe eine Zahl zwischen 1 und 10 ein:</p>
+
+    <input id="numb" onblur="pruefeEingabe()">
+    <p id="aus"></p>
+
+    <script>
+        function pruefeEingabe() {
+            var x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10)
+                document.getElementById("aus").innerHTML = 'Eingabe falsch!';
+            else
+                document.getElementById("aus").innerHTML = 'Eingabe richtig';
+        }
+    </script>
+
+</body>
+
+</html>

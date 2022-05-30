@@ -17,81 +17,82 @@ import de.hsh.steam.entities.User;
  */
 public class SerializedSeriesRepository extends SeriesRepository {
 
-	
-	private static SerializedSeriesRepository exemplar = null;
+    private static SerializedSeriesRepository exemplar = null;
 
-	private static String filename = "allSeriesData.ser";
-	
-	public static SerializedSeriesRepository getInstance() {
-		if (exemplar == null) {
-			exemplar = new SerializedSeriesRepository();
-		}
-		return exemplar;
-	}
+    private static String filename = "allSeriesData.ser";
 
-	/**
-	 * 
-	 */
-	public void saveData() {
-		FileOutputStream fos = null;
-		ObjectOutputStream oos = null;
-		try {
-			fos = new FileOutputStream("allSeriesData.ser");
-			oos = new ObjectOutputStream(fos);
-			oos.writeObject(this.allSeries);
-			oos.writeObject(this.allUsers);	
-			LOG.info("Write to Database " + filename);
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		} finally {
-			try {
-				fos.close();
-				oos.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+    public static SerializedSeriesRepository getInstance() {
+        if (exemplar == null) {
+            exemplar = new SerializedSeriesRepository();
+        }
+        return exemplar;
+    }
 
-	/**
-	 * 
-	 */
-	public void readData() {
-		ObjectInputStream ois = null;
-		FileInputStream fis = null;
-		try {
-			fis = new FileInputStream(filename);
-			ois = new ObjectInputStream(fis);
-			this.allSeries = (ArrayList<Series>) ois.readObject();
-			this.allUsers = (ArrayList<User>) ois.readObject();		
-		} catch (IOException e) {
-			LOG.info("Database does not exist: " + e.getMessage());
-		} catch (ClassNotFoundException e) {
-			LOG.info("Database does not exist: " + e.getMessage() );
-		} finally {
-			try {
-				if (fis != null)
-					fis.close();
-				if (ois != null)
-					ois.close();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
+    /**
+     *
+     */
+    public void saveData() {
+        FileOutputStream fos = null;
+        ObjectOutputStream oos = null;
+        try {
+            fos = new FileOutputStream("allSeriesData.ser");
+            oos = new ObjectOutputStream(fos);
+            oos.writeObject(this.allSeries);
+            oos.writeObject(this.allUsers);
+            LOG.info("Write to Database " + filename);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                fos.close();
+                oos.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
-	/**
-	 * 
-	 * @return
-	 */
-	public boolean clear(){
-		File file = new File(filename);
-		try {
-			return Files.deleteIfExists(file.toPath());
-		} catch (IOException e) {
-			e.printStackTrace();
-			return false;
-		}
-	}
+    /**
+     *
+     */
+    public void readData() {
+        ObjectInputStream ois = null;
+        FileInputStream fis = null;
+        try {
+            fis = new FileInputStream(filename);
+            ois = new ObjectInputStream(fis);
+            this.allSeries = (ArrayList<Series>) ois.readObject();
+            this.allUsers = (ArrayList<User>) ois.readObject();
+        } catch (IOException e) {
+            LOG.info("Database does not exist: " + e.getMessage());
+        } catch (ClassNotFoundException e) {
+            LOG.info("Database does not exist: " + e.getMessage());
+        } finally {
+            try {
+                if (fis != null) {
+                    fis.close();
+                }
+                if (ois != null) {
+                    ois.close();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     *
+     * @return
+     */
+    public boolean clear() {
+        File file = new File(filename);
+        try {
+            return Files.deleteIfExists(file.toPath());
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 }

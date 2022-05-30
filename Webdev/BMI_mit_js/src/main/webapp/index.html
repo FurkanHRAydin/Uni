@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Willkommen zum BMI-Rechner!</h1>
+
+        Bitte geben Sie Ihre Körpergröße (in Cm) an: <br>
+        
+        Körpergröße: <input type ="number" id="height" required>  <br>
+        
+        Bitte geben Sie Ihr Gewicht (in Kg) an: <br>
+        
+        Gewicht: <input type ="number" id="weight" required>  <br>
+        
+        <button type="button" onclick="berechne()"> Berechne BMI </button> <br>
+
+        <span id="result"></span>
+    </body>
+
+    <script>
+        function berechne() {
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+
+            document.getElementByIdb("result").innerHTML = "BMI: ";
+        }
+    </script>
+</html>

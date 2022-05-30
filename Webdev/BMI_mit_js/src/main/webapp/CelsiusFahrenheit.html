@@ -1,0 +1,24 @@
+<html>
+    <body>
+        Temperatur in Celsius: <input id="eingabe" type="number" min="1" max="32" size=25  "/> 
+        <br/>
+
+        <button type="button" 
+                onclick="fahrenheit()"> fahrenheit ... </button>
+        <br/>
+        <span id="result"> </span>
+
+        <script>
+            function fahrenheit() {
+                var c = document.getElementById("eingabe").value;
+                document.getElementById("result").innerHTML = 
+                        "Fahrenheit: " + celsius2fahr(c);
+            }
+            function celsius2fahr(c){
+                return  (1.8 * c) + 32 ;
+            }
+        </script>
+    </body>
+</html>
+
+

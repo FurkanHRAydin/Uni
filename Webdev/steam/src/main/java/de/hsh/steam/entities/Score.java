@@ -6,10 +6,10 @@ import java.io.Serializable;
  * Enum Score
  */
 public enum Score implements Serializable {
-	
-	bad, 
-	mediocre, 
-	good, 
-	very_good;
-	
+
+    bad,
+    mediocre,
+    good,
+    very_good;
+
 }
